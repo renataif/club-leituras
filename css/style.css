@@ -1,0 +1,173 @@
+body {
+  font-family: "Poppins", "Roboto", sans-serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+h1,
+a,
+p,
+br {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.header {
+  margin: 20px auto;
+  max-width: 1100px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-between;
+  position: relative;
+}
+
+header::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background: #110144;
+  position: absolute;
+}
+
+.header .nav {
+  align-self: center;
+}
+
+.header .logo {
+  align-self: center;
+  /*margin-left: 100px;*/
+}
+
+.header .link {
+  font-size: 1.3rem;
+  color: #fff;
+  background: linear-gradient(180deg, #110144 0%, #210b66 100%);
+  padding: 10px 20px;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+.link-white {
+  background: white;
+  border: 3px solid #110144;
+  padding: 7px 17px;
+  border-radius: 8px;
+  font-size: 1.3rem;
+  color: #110144;
+  font-weight: 600;
+}
+
+.user-option {
+  padding: 0;
+  display: flex;
+  gap: 20px;
+  align-content: center;
+}
+.user-option img {
+  margin-right: 30px;
+}
+
+.destaque {
+  margin: 0 auto;
+  max-width: 1100px;
+  height: 400px;
+  background: url("/img/destaque.jpg") no-repeat center;
+  background-size: cover;
+  border-radius: 8px;
+}
+
+.books-destaque {
+  margin-top: 80px;
+}
+
+.destaque h1 {
+  font-size: 4rem;
+  color: #fff;
+  max-width: 11ch;
+  margin-left: 40px;
+  padding-top: 20px;
+}
+.destaque p {
+  font-size: 2rem;
+  color: #fff;
+  margin-right: 40px;
+  margin-top: 100px;
+  text-align: right;
+}
+.leitura {
+  margin: 0 auto;
+  max-width: 1100px;
+  margin-top: 60px;
+}
+.leitura h2 {
+  font-size: 2rem;
+}
+.livro {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 60px;
+  align-items: end;
+  margin-bottom: 80px;
+}
+.livro img {
+  width: 100%;
+}
+.livro p {
+  text-align: justify;
+}
+.livro-desc {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+footer {
+  max-width: 100%;
+  background: #110144;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.rodape {
+  margin: 0 auto;
+  max-width: 1100px;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  position: relative;
+}
+.rodape img {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.rodape p {
+  color: #fff;
+}
+ul {
+  padding: 0;
+  list-style: none;
+}
+ul li {
+  color: #fff;
+}
+
+@media (max-width: 1100px) {
+  .livro {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 60px;
+    align-items: end;
+    margin-bottom: 80px;
+  }
+  .livro img {
+    display: none;
+  }
+  .livro-desc {
+    gap: 5px;
+  }
+}
